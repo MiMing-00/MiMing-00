@@ -1,10 +1,10 @@
 function solution(myString, pat) {
-    let count = 0;
+    let myArr = [];
     
     for (let i = 0; i < myString.length; i++) {
         if (myString.slice(i, i + pat.length) === pat) {
-            count++;
+            myArr.push([i]);
         }
     }
-    return count;
+    return myArr.length;
 }
